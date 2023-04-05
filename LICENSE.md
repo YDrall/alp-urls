@@ -1,1 +1,1 @@
-Hacker license!
+Jo krna hai kro license!
