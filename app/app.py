@@ -42,7 +42,3 @@ async def get_url(id: str) -> str:
 async def create_url(item: AlpCreateRequest) -> str:
     alpUrl = await AlpURL.create(db, item.url)
     return hostaddr + '/' + hashids.encode(alpUrl.id)
-
-
-if __name__ == '__main__':
-    uvicorn.run("app:app", port=7001, host='127.0.0.1')
