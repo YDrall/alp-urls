@@ -15,10 +15,14 @@ Core Backend APIs of the alp urls project.
 │       ├── __init__.py  # makes "internal" a "Python subpackage"
 │       └── admin.py     # "admin" submodule, e.g. import app.internal.admin
 │── requirements.in      # List of all the package dependecies. It's a manual list of all top level packages. Please don't write the pip freeze output in it.
-│── requirements.txt     # It's an auto generated list of packages and dependent packages created via `pip-compile --output-file=- > requirements.txt`. DO NOT updated it manually.
+│── requirements.txt     # It's an auto generated list of packages and dependent packages created via ` pip-compile --resolver=backtracking --output-file=- > requirements.txt`. DO NOT updated it manually.
 ```
 
 * Releases
+* Managing schema changes: # TODO
+
+* Managing environment variables:
+Loading env file: `export $(cat .env | xargs)`
 
 ## Notes
 
